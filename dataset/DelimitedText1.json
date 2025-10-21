@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "ol_dump_2025-09-30.txt",
 				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
