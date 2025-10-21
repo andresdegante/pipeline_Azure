@@ -17,11 +17,7 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "dataflow1",
-						"type": "DataFlowReference",
-						"parameters": {
-							"parámetro1": "{_col4_}",
-							"parámetro2": "{_col4_}"
-						}
+						"type": "DataFlowReference"
 					},
 					"compute": {
 						"coreCount": 8,
