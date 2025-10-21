@@ -16,9 +16,6 @@
 			"transformations": [
 				{
 					"name": "parse1"
-				},
-				{
-					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -43,21 +40,7 @@
 				"     columnNamesAsHeader: false,",
 				"     columnDelimiter: '     ',",
 				"     nullValue: '',",
-				"     documentForm: 'documentPerLine') ~> parse1",
-				"parse1 select(mapColumn(",
-				"          Column_1,",
-				"          Column_2,",
-				"          Column_3,",
-				"          Column_4,",
-				"          Column_5,",
-				"          Column_6,",
-				"          Column_7,",
-				"          Column_8,",
-				"          Column_9,",
-				"          Column_10",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1"
+				"     documentForm: 'documentPerLine') ~> parse1"
 			]
 		}
 	}
