@@ -21,7 +21,7 @@
 			],
 			"scriptLines": [
 				"parameters{",
-				"     _col5_ as string ({_col5_})",
+				"     col5_ as string (array())",
 				"}",
 				"source(output(",
 				"          Column_1 as string,",
