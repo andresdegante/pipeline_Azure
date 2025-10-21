@@ -34,7 +34,7 @@
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(Column_4 = Column_1 ? string,",
+				"source1 parse(Column_4 = ERROR_FUNCTION('json(_col4_).source_records[1]') ? string,",
 				"          Column_2 = Column_2 ? string,",
 				"     format: 'json',",
 				"     documentForm: 'documentPerLine') ~> parse1"
