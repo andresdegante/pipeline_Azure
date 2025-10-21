@@ -22,7 +22,7 @@
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse({_col4_} = ERROR_FUNCTION(''),",
+				"source1 parse({_col4_} = ERROR_FUNCTION('_col4_.name'),",
 				"     format: 'json',",
 				"     documentForm: 'documentPerLine') ~> parse1"
 			]
