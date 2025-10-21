@@ -15,7 +15,8 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "parse1"
+					"name": "parse1",
+					"description": "Column_7, Column_8, Column_9, Column_10\""
 				}
 			],
 			"scriptLines": [
