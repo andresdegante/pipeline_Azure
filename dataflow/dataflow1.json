@@ -32,7 +32,7 @@
 				"          Column_9 as string,",
 				"          Column_10 as string",
 				"     ),",
-				"     allowSchemaDrift: false,",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: true,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse(Column_1 = Column_1 ? string,",
