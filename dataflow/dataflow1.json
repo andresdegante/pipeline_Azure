@@ -35,7 +35,7 @@
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse({_col5_} = {_col5_} ? string,",
+				"source1 parse({_col5_} = ERROR_FUNCTION('json(_col5_).name') ? string,",
 				"     format: 'json',",
 				"     documentForm: 'singleDocument') ~> parse1"
 			]
