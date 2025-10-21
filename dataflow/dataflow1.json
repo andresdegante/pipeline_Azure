@@ -19,6 +19,9 @@
 				}
 			],
 			"scriptLines": [
+				"parameters{",
+				"     parámetro1 as string ({_col4_})",
+				"}",
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
