@@ -23,7 +23,7 @@
 				"     parámetro1 as string ({_col4_}),",
 				"     parámetro2 as string ({_col4_})",
 				"}",
-				"source(allowSchemaDrift: true,",
+				"source(allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse(format: 'delimited',",
