@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "parse1"
+				},
+				{
+					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -34,8 +37,24 @@
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(format: 'json',",
-				"     documentForm: 'documentPerLine') ~> parse1"
+				"source1 parse(format: 'delimited',",
+				"     columnNamesAsHeader: false,",
+				"     columnDelimiter: ',',",
+				"     nullValue: '') ~> parse1",
+				"parse1 select(mapColumn(",
+				"          Column_1,",
+				"          Column_2,",
+				"          Column_3,",
+				"          Column_4,",
+				"          Column_5,",
+				"          Column_6,",
+				"          Column_7,",
+				"          Column_8,",
+				"          Column_9,",
+				"          Column_10",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
