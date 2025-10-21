@@ -13,11 +13,7 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [
-				{
-					"name": "parse1"
-				}
-			],
+			"transformations": [],
 			"scriptLines": [
 				"parameters{",
 				"     parámetro1 as string ({_col4_}),",
@@ -37,11 +33,7 @@
 				"     ),",
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(format: 'delimited',",
-				"     columnNamesAsHeader: false,",
-				"     columnDelimiter: '     ',",
-				"     nullValue: '') ~> parse1"
+				"     ignoreNoFilesFound: false) ~> source1"
 			]
 		}
 	}
