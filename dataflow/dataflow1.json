@@ -35,11 +35,8 @@
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(Column_1 = {_col5_} ? string,",
-				"     format: 'delimited',",
-				"     columnNamesAsHeader: false,",
-				"     columnDelimiter: ',',",
-				"     nullValue: '',",
+				"source1 parse({_col5_} = {_col5_} ? string,",
+				"     format: 'json',",
 				"     documentForm: 'singleDocument') ~> parse1"
 			]
 		}
