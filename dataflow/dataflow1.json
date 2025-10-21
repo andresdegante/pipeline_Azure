@@ -28,7 +28,7 @@
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse(format: 'delimited',",
 				"     columnNamesAsHeader: false,",
-				"     columnDelimiter: ',',",
+				"     columnDelimiter: '     ',",
 				"     nullValue: '') ~> parse1"
 			]
 		}
