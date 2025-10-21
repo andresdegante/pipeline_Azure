@@ -36,7 +36,10 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse({_col5_} = {_col5_} ? string,",
-				"     format: 'json',",
+				"     format: 'delimited',",
+				"     columnNamesAsHeader: false,",
+				"     columnDelimiter: ',',",
+				"     nullValue: '',",
 				"     documentForm: 'singleDocument') ~> parse1"
 			]
 		}
