@@ -33,10 +33,8 @@
 				"     ),",
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false,",
-				"     partitionBy('roundRobin', 2)) ~> source1",
+				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse(Column_4 = array() ? string,",
-				"          Column_2 = Column_2 ? string,",
 				"     format: 'json',",
 				"     documentForm: 'documentPerLine') ~> parse1"
 			]
