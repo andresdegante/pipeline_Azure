@@ -34,9 +34,9 @@
 				"     allowSchemaDrift: false,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(Column_4 = array(),",
+				"source1 parse(Column_4 = array() ? string,",
 				"     format: 'json',",
-				"     documentForm: 'documentPerLine') ~> parse1"
+				"     documentForm: 'singleDocument') ~> parse1"
 			]
 		}
 	}
