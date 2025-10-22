@@ -20,10 +20,7 @@
 				}
 			],
 			"scriptLines": [
-				"source(output(",
-				"          {PK\u0003\u0004-\u0000\u0000\b\b\u0000\u0004\u0000�X�߾���������} as string",
-				"     ),",
-				"     allowSchemaDrift: true,",
+				"source(allowSchemaDrift: true,",
 				"     validateSchema: true,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 parse({_col0_} = {_col0_} ? string,",
