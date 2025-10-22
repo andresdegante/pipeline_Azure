@@ -15,7 +15,7 @@
 				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "ZipDeflate",
+			"compressionCodec": null,
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
