@@ -2,17 +2,14 @@
 	"name": "DelimitedText4",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "AzureBlobStorage2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileName": "movies.csv.zip",
-				"folderPath": "Letterboxd",
-				"fileSystem": "datasetlibros"
+				"type": "AzureBlobStorageLocation"
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "ZipDeflate",
