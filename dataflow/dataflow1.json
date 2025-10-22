@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "DelimitedText3",
+						"referenceName": "DelimitedText4",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
@@ -21,11 +21,7 @@
 			],
 			"scriptLines": [
 				"source(output(",
-				"          {_col0_} as string,",
-				"          {_col1_} as string,",
-				"          {_col2_} as short,",
-				"          {_col3_} as string,",
-				"          {_col4_} as string",
+				"          {PK\u0003\u0004-\u0000\u0000\b\b\u0000\u0004\u0000�X�߾���������} as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: true,",
