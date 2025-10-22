@@ -15,11 +15,11 @@
 				"fileSystem": "datasetlibros"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "deflate",
-			"compressionLevel": "Fastest",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"firstRowAsHeader": false,
+			"quoteChar": null
 		},
 		"schema": [
 			{
