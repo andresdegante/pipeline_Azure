@@ -9,14 +9,17 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"fileName": "movies.csv.zip",
+				"folderPath": "Letterboxd",
+				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "ZipDeflate",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
-			"firstRowAsHeader": false,
-			"quoteChar": null
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
 		},
 		"schema": [
 			{
