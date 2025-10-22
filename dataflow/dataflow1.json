@@ -31,8 +31,10 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: true,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 parse(format: 'json',",
-				"     documentForm: 'documentPerLine') ~> parse1"
+				"source1 parse(format: 'delimited',",
+				"     columnNamesAsHeader: false,",
+				"     columnDelimiter: ',',",
+				"     nullValue: '') ~> parse1"
 			]
 		}
 	}
