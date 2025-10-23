@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "movies.csv",
-				"folderPath": "temp",
+				"fileName": "movies.csv.zip",
+				"folderPath": "Letterboxd",
 				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
