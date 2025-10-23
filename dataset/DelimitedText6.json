@@ -10,10 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "movies.csv",
 				"folderPath": "temp",
 				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
