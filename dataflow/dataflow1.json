@@ -9,7 +9,10 @@
 						"referenceName": "DelimitedText6",
 						"type": "DatasetReference"
 					},
-					"name": "source1"
+					"name": "ACTORS"
+				},
+				{
+					"name": "MOVIES"
 				}
 			],
 			"sinks": [],
@@ -26,8 +29,10 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"     ignoreNoFilesFound: false) ~> ACTORS",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> MOVIES",
+				"ACTORS join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
 				"     joinType:'inner',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
