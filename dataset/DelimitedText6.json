@@ -10,12 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "movies.csv.zip",
-				"folderPath": "Letterboxd",
+				"fileName": "actors.csv",
+				"folderPath": "Letterboxd/descompress",
 				"container": "datasetlibros"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "ZipDeflate",
+			"compressionCodec": null,
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
