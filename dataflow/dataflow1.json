@@ -55,7 +55,7 @@
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join1",
 				"MOVIES, ACTORS join(MOVIES@id == ACTORS@id,",
-				"     joinType:'inner',",
+				"     joinType:'outer',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join2"
