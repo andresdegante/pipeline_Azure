@@ -99,7 +99,7 @@
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join3",
 				"join3 select(mapColumn(",
-				"          id = ACTORS@id,",
+				"          actor_id = ACTORS@id,",
 				"          actor_name = ACTORS@name,",
 				"          actor_role = role,",
 				"          movie_id = MOVIES@id,",
