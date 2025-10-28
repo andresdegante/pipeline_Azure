@@ -39,6 +39,9 @@
 					"name": "join1"
 				},
 				{
+					"name": "join2"
+				},
+				{
 					"name": "join3"
 				}
 			],
@@ -82,8 +85,13 @@
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join1",
-				"COUNTRIES, GENRES join(COUNTRIES@id == GENRES@id,",
+				"join1, COUNTRIES join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
 				"     joinType:'outer',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join2",
+				"join2 join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"     joinType:'inner',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join3"
