@@ -39,9 +39,6 @@
 					"name": "join1"
 				},
 				{
-					"name": "join2"
-				},
-				{
 					"name": "join3"
 				}
 			],
@@ -85,11 +82,6 @@
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join1",
-				"MOVIES, ACTORS join(MOVIES@id == ACTORS@id,",
-				"     joinType:'outer',",
-				"     matchType:'exact',",
-				"     ignoreSpaces: false,",
-				"     broadcast: 'auto')~> join2",
 				"COUNTRIES, GENRES join(COUNTRIES@id == GENRES@id,",
 				"     joinType:'outer',",
 				"     matchType:'exact',",
