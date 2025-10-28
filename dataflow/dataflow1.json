@@ -91,7 +91,7 @@
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join2",
 				"COUNTRIES, GENRES join(COUNTRIES@id == GENRES@id,",
-				"     joinType:'outer',",
+				"     joinType:'inner',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join3"
