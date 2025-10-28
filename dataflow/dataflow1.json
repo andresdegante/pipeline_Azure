@@ -109,7 +109,6 @@
 				"          description,",
 				"          runtime_minutes = minute,",
 				"          rating,",
-				"          id = COUNTRIES@id,",
 				"          country,",
 				"          id = GENRES@id,",
 				"          genre",
