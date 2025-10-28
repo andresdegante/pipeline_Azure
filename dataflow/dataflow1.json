@@ -82,7 +82,7 @@
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
 				"     broadcast: 'auto')~> join1",
-				"join1, GENRES join(COUNTRIES@id == GENRES@id,",
+				"COUNTRIES, GENRES join(COUNTRIES@id == GENRES@id,",
 				"     joinType:'outer',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
