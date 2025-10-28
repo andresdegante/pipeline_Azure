@@ -12,6 +12,10 @@
 					"name": "ACTORS"
 				},
 				{
+					"dataset": {
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					},
 					"name": "MOVIES"
 				}
 			],
@@ -30,8 +34,18 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> ACTORS",
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> MOVIES",
+				"source(output(",
+				"          id as string,",
+				"          name as string,",
+				"          date as string,",
+				"          tagline as string,",
+				"          description as string,",
+				"          minute as string,",
+				"          rating as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> MOVIES",
 				"ACTORS join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
 				"     joinType:'inner',",
 				"     matchType:'exact',",
