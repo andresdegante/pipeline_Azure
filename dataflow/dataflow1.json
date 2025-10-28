@@ -23,14 +23,14 @@
 						"referenceName": "COUNTRIES",
 						"type": "DatasetReference"
 					},
-					"name": "source1"
+					"name": "COUNTRIES"
 				},
 				{
 					"dataset": {
 						"referenceName": "GENRES",
 						"type": "DatasetReference"
 					},
-					"name": "source2"
+					"name": "GENRES"
 				}
 			],
 			"sinks": [],
@@ -40,6 +40,9 @@
 				},
 				{
 					"name": "join2"
+				},
+				{
+					"name": "join3"
 				}
 			],
 			"scriptLines": [
@@ -69,14 +72,14 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1",
+				"     ignoreNoFilesFound: false) ~> COUNTRIES",
 				"source(output(",
 				"          id as string,",
 				"          genre as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source2",
+				"     ignoreNoFilesFound: false) ~> GENRES",
 				"ACTORS, MOVIES join(ACTORS@id == MOVIES@id,",
 				"     joinType:'outer',",
 				"     matchType:'exact',",
@@ -86,7 +89,12 @@
 				"     joinType:'outer',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
-				"     broadcast: 'auto')~> join2"
+				"     broadcast: 'auto')~> join2",
+				"COUNTRIES, GENRES join(COUNTRIES@id == GENRES@id,",
+				"     joinType:'outer',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join3"
 			]
 		}
 	}
