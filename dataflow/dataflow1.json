@@ -31,6 +31,9 @@
 						"type": "DatasetReference"
 					},
 					"name": "GENRES"
+				},
+				{
+					"name": "source1"
 				}
 			],
 			"sinks": [],
@@ -77,6 +80,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> GENRES",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source1",
 				"ACTORS, MOVIES join(ACTORS@id == MOVIES@id,",
 				"     joinType:'outer',",
 				"     matchType:'exact',",
