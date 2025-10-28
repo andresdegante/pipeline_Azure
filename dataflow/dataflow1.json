@@ -43,6 +43,9 @@
 				},
 				{
 					"name": "join3"
+				},
+				{
+					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -94,7 +97,25 @@
 				"     joinType:'outer',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
-				"     broadcast: 'auto')~> join3"
+				"     broadcast: 'auto')~> join3",
+				"join3 select(mapColumn(",
+				"          id = ACTORS@id,",
+				"          name = ACTORS@name,",
+				"          role,",
+				"          id = MOVIES@id,",
+				"          name = MOVIES@name,",
+				"          date,",
+				"          tagline,",
+				"          description,",
+				"          minute,",
+				"          rating,",
+				"          id = COUNTRIES@id,",
+				"          country,",
+				"          id = GENRES@id,",
+				"          genre",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
