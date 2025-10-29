@@ -63,7 +63,7 @@
 				"          role as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"     validateSchema: true,",
 				"     ignoreNoFilesFound: false) ~> ACTORS",
 				"source(output(",
 				"          id as string,",
