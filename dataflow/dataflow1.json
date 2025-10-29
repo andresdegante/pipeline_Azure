@@ -145,7 +145,6 @@
 				"          runtime_minutes,",
 				"          rating,",
 				"          country,",
-				"          id,",
 				"          genre",
 				"     )) ~> sink1"
 			]
