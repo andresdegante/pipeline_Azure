@@ -118,7 +118,6 @@
 				"          runtime_minutes = minute,",
 				"          rating,",
 				"          country,",
-				"          id = GENRES@id,",
 				"          genre",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
