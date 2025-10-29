@@ -125,14 +125,29 @@
 				"     skipDuplicateMapOutputs: true) ~> select1",
 				"select1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     deletable:false,",
+				"     deletable:true,",
 				"     insertable:true,",
-				"     updateable:false,",
-				"     upsertable:false,",
+				"     updateable:true,",
+				"     upsertable:true,",
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
+				"     errorHandlingOption: 'stopOnFirstError',",
+				"     mapColumn(",
+				"          actor_id,",
+				"          actor_name,",
+				"          actor_role,",
+				"          movie_id,",
+				"          movie_title,",
+				"          release_year,",
+				"          tagline,",
+				"          description,",
+				"          runtime_minutes,",
+				"          rating,",
+				"          country,",
+				"          id,",
+				"          genre",
+				"     )) ~> sink1"
 			]
 		}
 	}
