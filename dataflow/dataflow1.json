@@ -35,10 +35,6 @@
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
-					},
 					"name": "sink1"
 				}
 			],
@@ -124,28 +120,9 @@
 				"     skipDuplicateMapOutputs: true) ~> select1",
 				"select1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     deletable:false,",
-				"     insertable:true,",
-				"     updateable:false,",
-				"     upsertable:false,",
-				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError',",
-				"     mapColumn(",
-				"          actor_id,",
-				"          actor_name,",
-				"          actor_role,",
-				"          movie_id,",
-				"          movie_title,",
-				"          release_year,",
-				"          tagline,",
-				"          description,",
-				"          runtime_minutes,",
-				"          rating,",
-				"          country,",
-				"          genre",
-				"     )) ~> sink1"
+				"     format: 'table') ~> sink1"
 			]
 		}
 	}
