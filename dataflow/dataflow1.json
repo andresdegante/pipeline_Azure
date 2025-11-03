@@ -135,7 +135,7 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     errorHandlingOption: 'stopOnFirstError',",
-				"     partitionBy('roundRobin', 2)) ~> sink1"
+				"     partitionBy('roundRobin', 100)) ~> sink1"
 			]
 		}
 	}
